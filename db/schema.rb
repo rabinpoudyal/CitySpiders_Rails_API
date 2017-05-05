@@ -10,6 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20170505154612) do
+
+  create_table "books", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.string   "title"
+    t.string   "isbn"
+    t.decimal  "price",      precision: 10
+    t.string   "condition"
+    t.string   "location"
+    t.string   "category"
+    t.boolean  "is_sold"
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
 
 end
