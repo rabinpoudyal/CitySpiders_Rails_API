@@ -14,6 +14,8 @@ gem 'mysql2', '>= 0.3.18', '< 0.5'
 gem 'puma', '~> 3.0'
 #Authentication gem
 gem 'devise'
+#Token gem
+gem 'simple_token_authentication', '~> 1.0' # see semver.org
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -25,7 +27,6 @@ gem 'devise'
 # gem 'capistrano-rails', group: :development
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
 gem 'rack-cors', :require => 'rack/cors'
 
 group :development, :test do
