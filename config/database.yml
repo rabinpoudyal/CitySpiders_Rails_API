@@ -28,8 +28,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: CitySpider_Dev
-  username: city_spider
+  database: CitySpider_Test
+  username: cityspider_test
   password: secretpassword
 
 # As with config/secrets.yml, you never want to store sensitive information,
