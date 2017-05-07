@@ -3,11 +3,11 @@ class V1::BooksController < ApplicationController
 
   def index
     @books = Book.all
-    render json: @books, status: :ok
+    #render json: @books, status: :ok
   end
 
   def show
-    render json: @book
+    render :show
   end
 
   def create
